@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uma Coleção de Esperança — Dr. Juliano Coelho</title>
+<meta name="description" content="Dois textos de fé e esperança para quem enfrenta o câncer sem desistir de acreditar. Por Dr. Juliano Coelho, Oncologista Clínico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bege-escuro: #5C3D08;
+    --dourado: #C89010;
+    --dourado-claro: #E8C840;
+    --bege-medio: #8B6010;
+    --bege-fundo: #FFFBF4;
+    --bege-card: #FAF4E8;
+    --bege-borda: #E8D8B0;
+    --texto: #3A2A08;
+    --texto-sec: #6B4E14;
+    --branco: #ffffff;
+    --max: 680px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--texto);
+    background: var(--bege-fundo);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(160deg, #3A2208 0%, #5C3A10 60%, #7A5008 100%);
+    padding: 64px 20px 56px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(232,200,64,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(232,200,64,0.15);
+    color: #E8C840;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(232,200,64,0.25);
+  }
+
+  .hero h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.3;
+    color: #FAF4E8;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: #E8C840;
+    font-weight: 600;
+  }
+
+  .hero-lead {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(250,244,232,0.75);
+    max-width: 520px;
+    margin: 0 auto 36px;
+  }
+
+  .price-block {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .price-main {
+    font-size: 34px;
+    font-weight: 500;
+    color: #FAF4E8;
+    letter-spacing: -0.5px;
+  }
+
+  .price-old {
+    font-size: 15px;
+    color: rgba(250,244,232,0.35);
+    text-decoration: line-through;
+  }
+
+  .price-note {
+    font-size: 12px;
+    color: rgba(250,244,232,0.45);
+    display: block;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  .btn-primary {
+    display: block;
+    background: var(--dourado);
+    color: #2A1A04;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .btn-primary:hover { background: #A87808; }
+  .btn-primary:active { transform: scale(0.98); }
+
+  .delivery-note {
+    font-size: 12px;
+    color: rgba(250,244,232,0.35);
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 52px 20px;
+    border-bottom: 1px solid var(--bege-borda);
+  }
+
+  .section:last-of-type { border-bottom: none; }
+
+  .section-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--dourado);
+    margin-bottom: 10px;
+  }
+
+  .section h2 {
+    font-family: 'Lora', serif;
+    font-size: clamp(20px, 4vw, 26px);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.35;
+    color: var(--bege-escuro);
+    margin-bottom: 20px;
+  }
+
+  .section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--texto-sec);
+    margin-bottom: 14px;
+  }
+
+  .section p:last-child { margin-bottom: 0; }
+
+  /* ── DOR LIST ── */
+  .dor-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 24px 0;
+  }
+
+  .dor-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--texto);
+    background: var(--bege-card);
+    padding: 14px 16px;
+    border-radius: 10px;
+    border-left: 3px solid var(--dourado);
+  }
+
+  .dor-aspas {
+    font-size: 22px;
+    color: var(--dourado);
+    line-height: 1;
+    flex-shrink: 0;
+    font-family: 'Lora', serif;
+    font-style: italic;
+  }
+
+  /* ── BOOKS CARD ── */
+  .books-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 24px 0;
+  }
+
+  @media (max-width: 480px) {
+    .books-grid { grid-template-columns: 1fr; }
+  }
+
+  .book-card {
+    background: var(--bege-card);
+    border-radius: 12px;
+    border: 1px solid var(--bege-borda);
+    padding: 20px;
+  }
+
+  .book-num {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dourado);
+    margin-bottom: 8px;
+  }
+
+  .book-title {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--bege-escuro);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .book-desc {
+    font-size: 13px;
+    color: var(--texto-sec);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── FEATURES ── */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+  }
+
+  @media (max-width: 480px) {
+    .features-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  .feature-card {
+    background: var(--bege-card);
+    border-radius: 10px;
+    border: 1px solid var(--bege-borda);
+    padding: 18px 14px;
+    text-align: center;
+  }
+
+  .feature-num {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--dourado);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .feature-card p {
+    font-size: 13px;
+    color: var(--texto-sec);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ── DEPOIMENTOS ── */
+  .depoimentos {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 24px 0;
+  }
+
+  .depoimento {
+    background: var(--bege-card);
+    border-radius: 12px;
+    border: 1px solid var(--bege-borda);
+    border-left: 3px solid var(--dourado);
+    padding: 20px;
+  }
+
+  .depoimento-texto {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--texto);
+    margin-bottom: 16px;
+  }
+
+  .depoimento-autor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .depoimento-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bege-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #E8C840;
+    flex-shrink: 0;
+  }
+
+  .depoimento-nome {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--texto);
+  }
+
+  .depoimento-papel {
+    font-size: 12px;
+    color: var(--texto-sec);
+    margin-top: 2px;
+  }
+
+  /* ── AUTHOR ── */
+  .author-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    background: var(--bege-card);
+    border-radius: 12px;
+    border: 1px solid var(--bege-borda);
+    padding: 20px;
+    margin: 24px 0;
+  }
+
+  .author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--bege-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #E8C840;
+    flex-shrink: 0;
+  }
+
+  .author-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--texto);
+    margin-bottom: 4px;
+  }
+
+  .author-bio {
+    font-size: 13px;
+    color: var(--texto-sec);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── GARANTIA ── */
+  .guarantee-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--bege-borda);
+    background: var(--bege-card);
+    margin: 24px 0;
+  }
+
+  .guarantee-icon { font-size: 30px; flex-shrink: 0; }
+
+  .guarantee-box h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--texto);
+    margin-bottom: 5px;
+  }
+
+  .guarantee-box p {
+    font-size: 13px;
+    color: var(--texto-sec);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── FAQ ── */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 24px 0;
+  }
+
+  .faq-item {
+    padding: 16px 18px;
+    background: var(--bege-card);
+    border-radius: 10px;
+    border: 1px solid var(--bege-borda);
+  }
+
+  .faq-q {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--texto);
+    margin-bottom: 6px;
+  }
+
+  .faq-a {
+    font-size: 13px;
+    color: var(--texto-sec);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── FINAL CTA ── */
+  .final-cta {
+    background: linear-gradient(160deg, #3A2208 0%, #5C3A10 60%, #7A5008 100%);
+    padding: 64px 20px;
+    text-align: center;
+  }
+
+  .final-cta-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+
+  .final-cta h2 {
+    font-family: 'Lora', serif;
+    font-size: clamp(22px, 4vw, 30px);
+    font-weight: 400;
+    font-style: italic;
+    color: #FAF4E8;
+    margin-bottom: 14px;
+    line-height: 1.35;
+  }
+
+  .final-cta p {
+    font-size: 15px;
+    color: rgba(250,244,232,0.65);
+    margin-bottom: 28px;
+    line-height: 1.75;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .final-cta .delivery-note {
+    margin: 12px auto 0;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #2A1A04;
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 12px;
+    color: rgba(250,244,232,0.3);
+    line-height: 1.7;
+  }
+
+  /* ── STICKY MOBILE ── */
+  .sticky-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #3A2208;
+    padding: 12px 20px;
+    z-index: 100;
+    border-top: 1px solid rgba(232,200,64,0.2);
+  }
+
+  @media (max-width: 600px) {
+    .sticky-bar { display: block; }
+    body { padding-bottom: 72px; }
+  }
+
+  .sticky-bar .btn-primary { max-width: 100%; padding: 13px 20px; font-size: 15px; }
+
+  .divider {
+    height: 1px;
+    background: var(--bege-borda);
+    margin: 8px 0 24px;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="badge">Coleção motivacional · 2 eBooks</div>
+    <h1>Para os dias em que você precisa de mais do que informação.<br><em>Precisa de força.</em></h1>
+    <p class="hero-lead">O diagnóstico não abala apenas o corpo. Abala a fé, a esperança, a certeza de amanhã. Estes dois textos foram escritos por um oncologista que vê isso todos os dias — e acredita que fé e tratamento não se excluem. Se completam.</p>
+    <div class="price-block">
+      <span class="price-main">R$ 47</span>
+      <span class="price-old">R$ 74</span>
+    </div>
+    <span class="price-note">os dois eBooks · acesso imediato · formato PDF</span>
+    <a href="https://pay.kiwify.com.br/XzHtpR1" class="btn-primary">Quero minha dose de esperança →</a>
+    <p class="delivery-note">Entrega imediata por e-mail · Garantia de 7 dias</p>
+  </div>
+</section>
+
+<!-- SEÇÃO 1: DOR -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Para quem é esta coleção</div>
+    <h2>Há momentos em que as palavras certas fazem toda a diferença.</h2>
+    <ul class="dor-list">
+      <li><span class="dor-aspas">"</span>Recebi o diagnóstico e sinto que minha fé está abalada. Não sei como seguir em frente.</li>
+      <li><span class="dor-aspas">"</span>Estou em tratamento e há dias em que simplesmente não consigo me levantar.</li>
+      <li><span class="dor-aspas">"</span>Meu familiar está lutando contra o câncer e eu não sei como ajudar sem desmoronar.</li>
+      <li><span class="dor-aspas">"</span>Preciso de algo que me lembre por que vale a pena continuar.</li>
+    </ul>
+    <p>Se você se reconheceu em alguma dessas situações, estes textos foram escritos para você.</p>
+  </div>
+</section>
+
+<!-- SEÇÃO 2: PRODUTO -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">O que você recebe</div>
+    <h2>Dois textos. Uma mensagem. Esperança.</h2>
+
+    <div class="books-grid">
+      <div class="book-card">
+        <div class="book-num">eBook 1</div>
+        <div class="book-title">Não Deixe de Acreditar</div>
+        <p class="book-desc">Uma dose de esperança para sua vida. Textos sobre fé, ciência e a força que habita em cada paciente — mesmo nos dias mais difíceis.</p>
+      </div>
+      <div class="book-card">
+        <div class="book-num">eBook 2</div>
+        <div class="book-title">Você Não Pode Parar</div>
+        <p class="book-desc">Ainda há muito a viver. Textos sobre resiliência, cicatrizes que viram força e o poder de seguir em frente quando tudo parece impossível.</p>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-num">2</div>
+        <p>eBooks completos com textos motivacionais e espirituais</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">PDF</div>
+        <p>acesso imediato, leia no celular ou computador</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">∞</div>
+        <p>releia quando precisar, sem prazo de validade</p>
+      </div>
+    </div>
+
+    <a href="https://pay.kiwify.com.br/XzHtpR1" class="btn-primary" style="margin-top: 28px;">Acessar a coleção por R$ 47 →</a>
+  </div>
+</section>
+
+<!-- SEÇÃO 3: DEPOIMENTOS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Quem já leu</div>
+    <h2>O que dizem pacientes e familiares.</h2>
+    <div class="depoimentos">
+
+      <div class="depoimento">
+        <p class="depoimento-texto">"Minha mãe recebeu o diagnóstico numa sexta-feira. Passei o fim de semana sem saber o que perguntar, o que pesquisar ou o que esperar. Este guia foi realmente o meu companheiro e auxiliar na organização das ideias e trouxe clareza justamente no momento em que eu mais precisava."</p>
+        <div class="depoimento-autor">
+          <div class="depoimento-avatar">M</div>
+          <div>
+            <div class="depoimento-nome">Mariana</div>
+            <div class="depoimento-papel">Filha de paciente</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="depoimento">
+        <p class="depoimento-texto">"Saí da consulta com o laudo na mão e a cabeça completamente confusa. Não sabia por onde começar até encontrar o guia. Li tudo naquela mesma noite e, na consulta seguinte, consegui conversar melhor com o médico e fazer as perguntas certas. Para mim, fez toda a diferença."</p>
+        <div class="depoimento-autor">
+          <div class="depoimento-avatar">B</div>
+          <div>
+            <div class="depoimento-nome">Bianca</div>
+            <div class="depoimento-papel">Paciente recém diagnosticada</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="depoimento">
+        <p class="depoimento-texto">"Minha esposa estava em tratamento e eu me sentia perdido, sem saber como ajudar. O guia me ajudou a entender melhor o que ela estava vivendo e me mostrou formas mais concretas de estar ao lado dela."</p>
+        <div class="depoimento-autor">
+          <div class="depoimento-avatar">A</div>
+          <div>
+            <div class="depoimento-nome">Antonio</div>
+            <div class="depoimento-papel">Familiar de paciente</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO 4: AUTOR -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Quem escreve</div>
+    <h2>Palavras de quem vê essa batalha todos os dias.</h2>
+    <div class="author-block">
+      <div class="author-avatar">JC</div>
+      <div>
+        <div class="author-name">Dr. Juliano Coelho</div>
+        <p class="author-bio">Oncologista Clínico · CRM-RS 34989 · RQE 29213. Atende pacientes com câncer todos os dias — e acredita que a batalha não é só do corpo. É da mente. É da alma. Estes textos nasceram da sua experiência dentro e fora do consultório.</p>
+      </div>
+    </div>
+    <p>A ciência trata o corpo. Mas há algo que vai além da medicina — e é sobre isso que estes textos falam.</p>
+  </div>
+</section>
+
+<!-- SEÇÃO 5: GARANTIA + FAQ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Segurança na compra</div>
+
+    <div class="guarantee-box">
+      <span class="guarantee-icon">🛡️</span>
+      <div>
+        <h3>Garantia de 7 dias</h3>
+        <p>Se por qualquer motivo o material não atender ao que você esperava, devolvemos 100% do valor em até 7 dias após a compra. Sem perguntas, sem burocracia.</p>
+      </div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Como recebo os eBooks após a compra?</div>
+        <p class="faq-a">Imediatamente. Assim que o pagamento for confirmado, você recebe um e-mail com o link para download dos dois PDFs. Acesso em menos de 2 minutos.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Funciona no celular?</div>
+        <p class="faq-a">Sim. Os PDFs abrem normalmente em qualquer smartphone, tablet ou computador. Você pode salvar e ler offline quando precisar — inclusive durante o tratamento.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Este material substitui acompanhamento médico ou psicológico?</div>
+        <p class="faq-a">Não. São textos de apoio emocional e espiritual — um complemento humano ao tratamento, não um substituto. O acompanhamento médico e psicológico é sempre insubstituível.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <h2>Nos dias mais difíceis,<br>a esperança também precisa de alimento.</h2>
+    <p>Acesse agora e leia ainda hoje. Porque você não precisa enfrentar isso sozinho.</p>
+    <a href="https://pay.kiwify.com.br/XzHtpR1" class="btn-primary">Acessar a coleção por R$ 47 →</a>
+    <p class="delivery-note">Entrega imediata por e-mail · PDF · Garantia de 7 dias</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    Dr. Juliano Coelho — Oncologista Clínico<br>
+    CRM-RS 34989 · RQE 29213<br>
+    Este material tem fins de apoio emocional e não substitui consulta médica ou psicológica.<br>
+    <a href="https://pay.kiwify.com.br/XzHtpR1" style="color: rgba(250,244,232,0.4);">Comprar</a>
+  </p>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky-bar">
+  <a href="https://pay.kiwify.com.br/XzHtpR1" class="btn-primary">Acessar por R$ 47 →</a>
+</div>
+
+</body>
+</html>
